@@ -11,7 +11,7 @@ export default function MovieCards(props) {
     <>
       <Col className="Mcard" >
       <Link to={`/moviedetail/${movie.id}`} >   <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} /></Link>
-        <div className="card-body">
+        <div className="Mcard-body">
           <h5 className="card-title">{movie.title}</h5>
           <p className="card-text">{movie.id}</p>
           <p className="card-text">{movie.overview}</p>

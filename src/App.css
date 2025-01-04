@@ -1,13 +1,11 @@
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: #000000;
   position: sticky;
   z-index: 1000;
   top: 0%;
- 
-  padding: 0.5em 1em;
   color: #ffffff!important;
   
  
@@ -21,11 +19,11 @@ a{
   font-size: 2em;
   margin-left: 20px;
 }
-Navlink {
+.Navlink {
 text-decoration: none;
 }
 .navbar .brand .name {
-  font-size: 1.2em;
+  font-size: 2em;
   font-weight: bold;
   margin-right: 0.5em;
   color: #ffffff; 
@@ -39,50 +37,78 @@ text-decoration: none;
   display: flex;
   margin: 10px;
   padding: 0px;
+  gap: 40px;
 }
 
 .navbar ul li {
-  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 1.5em;
+  
   
 }
 .link{
   color: #ffffff;
 }
 .link:hover{
-  color:rgb(25, 0, 255) !important;
+  color:rgb(0, 217, 255) !important;
+}
+.main-link{
+  color: #ffffff;
+}
+.main-link:hover{
+  color:rgb(0, 217, 255) !important;
 }
 
 
 .navbar ul li a:hover {
   color: #00bcd4;
-}
-.Mcard{
-  margin-top: 50px;
-}
-.selectedMcard{
-  margin-top: 100px;
-
-}
+  }.Movielist {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of items */
+    gap: 20px; /* Space between cards */
+    justify-content: flex-start; /* Align cards to the start */
+    padding: 20px;
+  }
+  .Mcard {
+    
+    margin-top: 30px;
+    flex: 0 1 calc(25% - 20px);
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex; 
+    flex-direction: column;
+    margin-left: 20px;
+   padding: 0%;
+   overflow: hidden;
+  }
+  .Mcard img {
+    width: 100%; 
+    height: auto;
+  }
+  .Mcard-body{
+    margin: 2px ;
+    margin: 5px;
+  }
 .selectedMcard {
-  border: 1px solid #ddd;
+  border: 2px solid #a0a0a0;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  max-width: 400px;
-  margin: 20px auto;
-  background-color: #fff;
+  max-width: 500px;
+  margin: 50px auto;
 }
 
 .selectedMcard img {
   width: 100%;
   height: auto;
-  border-bottom: 1px solid #ddd;
 }
 
 .selcard-body {
   padding: 15px;
   text-align: center;
+  width: 100%;
+  
 }
 
 .selcard-title {
@@ -95,10 +121,10 @@ text-decoration: none;
   font-size: 1rem;
   color: #555;
   margin-bottom: 10px;
+  text-overflow: clip;
 }
-
-.selcard-text:last-child {
-  font-size: 0.9rem;
-  color: #888;
+.search-bar{
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
 }
-
