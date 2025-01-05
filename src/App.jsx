@@ -8,14 +8,16 @@ import MovieDetail from "./pages/MovieDetail";
 import Movielist from "./pages/Movielist";
 import Watchlist from "./pages/Watchlist";
 import NotFound from "./pages/NotFound";
-
+import ProfileContent from "./pages/regisriation"
 
 function App() {
   return (
     <>
       <BrowserRouter>
+
         <MyNavBar/>
         <Routes>
+          <Route path="/registration" element={<ProfileContent/>}></Route>
           <Route path="/movielist" element={<Movielist/>}></Route>
           <Route path="/moviedetail/:id" element={<MovieDetail/>}></Route>
           <Route path="/watchlist" element={<Watchlist/>}></Route>

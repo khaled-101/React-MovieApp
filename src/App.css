@@ -128,3 +128,11 @@ text-decoration: none;
   margin-top: 10px;
   justify-content: center;
 }
+#searchInput {
+  width: 300px !important; 
+  flex-grow: 0; 
+}
+.topLove:hover {
+  color: red;
+  overflow: hidden;
+}

@@ -27,6 +27,13 @@ export default function MyNavbar() {
               Watch List
             </NavLink>
           </li>
+          <li>
+            {" "}
+            <NavLink className="link" to="/registration">
+              {" "}
+              
+            </NavLink>
+          </li>
         </ul>
 
         
